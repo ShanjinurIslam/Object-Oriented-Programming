@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="800" maxWidth="480" minHeight="800" minWidth="480" prefHeight="800.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <children>
+      <ImageView fitHeight="805.0" fitWidth="649.0" layoutX="-3.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="252.0" layoutY="368.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="253.0" layoutY="425.0" promptText="Type new Password" />
+      <Label layoutX="147.0" layoutY="371.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="428.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="475.0" text="Confirm Password" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="confirmpassword" layoutX="253.0" layoutY="472.0" promptText="Rewrite Password" />
+      <Button layoutX="30.0" layoutY="44.0" mnemonicParsing="false" onAction="#Back" text="Back " />
+      <Button layoutX="192.0" layoutY="575.0" mnemonicParsing="false" onAction="#AccountCreate" text="Create New Account" />
+      <Label fx:id="Error" layoutX="192.0" layoutY="531.0" />
+   </children>
+</AnchorPane>

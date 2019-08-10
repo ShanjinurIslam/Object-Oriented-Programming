@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller4">
+   <children>
+      <ImageView fitHeight="858.0" fitWidth="660.0" layoutX="-27.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="chatRequests" editable="false" layoutX="42.0" layoutY="284.0" prefHeight="327.0" prefWidth="284.0" />
+      <Text fill="WHITE" layoutX="144.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to SnapChat">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="364.0" layoutY="642.0" mnemonicParsing="false" onAction="#setStartChat" text="Start Chat" />
+      <Button layoutX="505.0" layoutY="25.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+      <Button layoutX="242.0" layoutY="200.0" mnemonicParsing="false" onAction="#setGroupChat" text="Start Group Chat" />
+      <ChoiceBox fx:id="friendNames" layoutX="41.0" layoutY="642.0" prefHeight="27.0" prefWidth="309.0" />
+      <Label layoutX="144.0" layoutY="255.0" text="Notifications" textFill="WHITE" />
+      <TextArea fx:id="OnlineList" editable="false" layoutX="352.0" layoutY="284.0" prefHeight="327.0" prefWidth="200.0" />
+      <Label layoutX="431.0" layoutY="255.0" text="Online " textFill="WHITE" />
+      <Button layoutX="460.0" layoutY="642.0" mnemonicParsing="false" onAction="#refreshOnlineList" prefHeight="27.0" prefWidth="90.0" text="Knock" />
+      <Button layoutX="378.0" layoutY="200.0" mnemonicParsing="false" onAction="#lookForUnread" text="Look for unread message" />
+   </children>
+</AnchorPane>

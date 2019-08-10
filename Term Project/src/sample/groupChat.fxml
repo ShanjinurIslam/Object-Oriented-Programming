@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="572.0" style="-fx-background-image: url(&quot;http://www.freepptbackgrounds.net/wp-content/uploads/2014/09/Technology-Design-for-Powerpoint-Template-800x600.jpg&quot;);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GroupChatController">
+    <children>
+        <Button layoutX="456.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeConnection" text="Close Chat" />
+        <TextArea fx:id="ChatHistory" layoutX="30.0" layoutY="124.0" prefHeight="386.0" prefWidth="513.0" promptText="Messages" />
+        <TextField fx:id="messages" layoutX="28.0" layoutY="537.0" prefHeight="27.0" prefWidth="428.0" promptText="Write Message" />
+        <Button layoutX="479.0" layoutY="536.0" mnemonicParsing="false" onAction="#sendMessage" text="Send" />
+        <Label contentDisplay="TOP" layoutX="41.0" layoutY="64.0" text="Group Chat" textFill="#dad8d8">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
